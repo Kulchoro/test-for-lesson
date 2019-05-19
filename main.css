@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  padding: 30px;
+  background-color: rgb(68, 67, 65);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+nav ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+nav ul li a:focus {
+  color: blue;
+  text-decoration: underline;
+}
+
+.burger {
+  display: none;
+}
+
+.burger .line {
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+}
+aside {
+  background-color: aquamarine;
+  float: left;
+  height: 500px;
+  width: 300px;
+  padding: 5px;
+}
+aside div {
+  display: flex;
+  margin: 10px;
+}
+section {
+  margin-bottom: 100px;
+}
+
+section div {
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 0 10px;
+  margin: 15px;
+  border-radius: 7px;
+}
+
+footer {
+  background-color: #999;
+  padding: 25px;
+}
+
+footer div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    margin-bottom: 50px;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    float: right;
+  }
+
+  aside {
+    padding: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section div {
+    width: 40%;
+  }
+}
